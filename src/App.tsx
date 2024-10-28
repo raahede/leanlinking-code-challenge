@@ -2,6 +2,7 @@ import style from './App.module.css';
 import { Card } from './ui/Card';
 import data from '../public/data/data.json';
 import { useState } from 'react';
+import { IssueList } from './IssueList';
 
 function App() {
   const [issues] = useState(data);
@@ -9,22 +10,7 @@ function App() {
     <div className={style.app}>
       <Card>Hello test</Card>
       <Card>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-            </tr>
-          </thead>
-          <tbody>
-            {issues.map((item) => {
-              return (
-                <tr>
-                  <td>{item.title}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <IssueList issues={issues} />
       </Card>
     </div>
   );
