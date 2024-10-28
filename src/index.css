@@ -3,7 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: rgb(101, 101, 101);
+  background-color: rgb(23, 24, 33);
+  color: #f3f3f3;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,5 +22,6 @@
 @media (prefers-color-scheme: light) {
   :root {
     background-color: rgb(245, 245, 246);
+    color: rgb(22, 22, 22);
   }
 }
