@@ -1,6 +1,16 @@
-import { TIssueList } from './types';
+import { memo } from 'react';
+import { TIssueListItemParsed } from './types';
 
-export const IssueList = ({ issues }: { issues: TIssueList }) => {
+// Memoize component to avoid rerender when sorting list
+const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParsed }) {
+  return (
+    <tr>
+      <td>{issue.title}</td>
+    </tr>
+  );
+});
+
+export const IssueList = ({ issues }: { issues: TIssueListItemParsed[] }) => {
   return (
     <table>
       <thead>
@@ -10,11 +20,7 @@ export const IssueList = ({ issues }: { issues: TIssueList }) => {
       </thead>
       <tbody>
         {issues.map((item) => {
-          return (
-            <tr key={item.id}>
-              <td>{item.title}</td>
-            </tr>
-          );
+          return <IssueListItem key={item.id} issue={item} />;
         })}
       </tbody>
     </table>

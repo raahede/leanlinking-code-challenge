@@ -5,7 +5,7 @@ import 'sanitize.css/forms.css';
 import 'sanitize.css/typography.css';
 import './index.css';
 
-import App from './App.tsx';
+import { App } from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
