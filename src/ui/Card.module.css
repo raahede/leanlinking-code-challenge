@@ -1,0 +1,11 @@
+.card {
+  background-color: rgb(172, 172, 172);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: #fff;
+  }
+}

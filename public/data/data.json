@@ -1,0 +1,2067 @@
+[
+  {
+    "id": 12396,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-10-03T17:17:46",
+    "closedDate": "2024-08-03T13:58:56",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12397,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-08-26T08:24:36",
+    "closedDate": "2024-08-21T13:07:21",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12398,
+    "title": "Missing Shipment",
+    "status": "Pending",
+    "createdDate": "2024-08-03T23:20:07",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12399,
+    "title": "Damaged Goods",
+    "status": "Resolved",
+    "createdDate": "2024-09-16T06:55:10",
+    "closedDate": "2024-09-02T06:24:01",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12400,
+    "title": "Product Recall",
+    "status": "Active",
+    "createdDate": "2024-10-06T21:26:50",
+    "closedDate": "2024-08-15T03:23:57",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12401,
+    "title": "Late Delivery",
+    "status": "Resolved",
+    "createdDate": "2024-08-09T08:45:35",
+    "closedDate": "2024-08-17T08:17:46",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12402,
+    "title": "Late Delivery",
+    "status": "Resolved",
+    "createdDate": "2024-09-30T03:02:10",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12403,
+    "title": "Damaged Goods",
+    "status": "Pending",
+    "createdDate": "2024-08-07T19:43:41",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12404,
+    "title": "Late Delivery",
+    "status": "Pending",
+    "createdDate": "2024-08-22T16:57:06",
+    "closedDate": "2024-09-02T11:35:11",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12405,
+    "title": "Delayed Payment",
+    "status": "Active",
+    "createdDate": "2024-10-04T10:39:13",
+    "closedDate": "2024-08-27T17:13:13",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12406,
+    "title": "Product Recall",
+    "status": "Pending",
+    "createdDate": "2024-08-28T07:41:39",
+    "closedDate": "2024-09-08T00:16:24",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12407,
+    "title": "Delayed Payment",
+    "status": "Pending",
+    "createdDate": "2024-08-10T21:44:44",
+    "closedDate": "2024-08-20T05:10:22",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12408,
+    "title": "Product Recall",
+    "status": "Active",
+    "createdDate": "2024-10-01T01:41:45",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12409,
+    "title": "Missing Shipment",
+    "status": "Resolved",
+    "createdDate": "2024-08-02T15:00:14",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12410,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-09-21T15:53:30",
+    "closedDate": "2024-08-02T13:17:27",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12411,
+    "title": "Delayed Payment",
+    "status": "Resolved",
+    "createdDate": "2024-09-09T14:42:24",
+    "closedDate": "2024-08-08T17:48:58",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12412,
+    "title": "Damaged Goods",
+    "status": "Pending",
+    "createdDate": "2024-09-12T20:35:38",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12413,
+    "title": "Delayed Payment",
+    "status": "Resolved",
+    "createdDate": "2024-10-04T01:44:06",
+    "closedDate": "2024-09-19T21:24:28",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12414,
+    "title": "Late Delivery",
+    "status": "Active",
+    "createdDate": "2024-08-03T00:55:47",
+    "closedDate": "2024-08-19T15:23:26",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12415,
+    "title": "Product Recall",
+    "status": "Resolved",
+    "createdDate": "2024-08-12T00:05:35",
+    "closedDate": "2024-08-08T02:20:54",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12416,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-08-28T11:04:16",
+    "closedDate": "2024-08-03T19:30:55",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12417,
+    "title": "Late Delivery",
+    "status": "Active",
+    "createdDate": "2024-08-31T02:19:56",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12418,
+    "title": "Product Recall",
+    "status": "Active",
+    "createdDate": "2024-09-03T11:53:59",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12419,
+    "title": "Delayed Payment",
+    "status": "Active",
+    "createdDate": "2024-08-26T19:01:51",
+    "closedDate": "2024-09-12T14:44:10",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12420,
+    "title": "Missing Shipment",
+    "status": "Resolved",
+    "createdDate": "2024-09-09T09:13:43",
+    "closedDate": "2024-09-07T01:18:55",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12421,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-09-12T22:29:09",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12422,
+    "title": "Product Recall",
+    "status": "Pending",
+    "createdDate": "2024-09-11T01:18:21",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12423,
+    "title": "Damaged Goods",
+    "status": "Pending",
+    "createdDate": "2024-08-26T07:43:14",
+    "closedDate": "2024-08-29T18:57:45",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12424,
+    "title": "Late Delivery",
+    "status": "Pending",
+    "createdDate": "2024-09-02T15:50:38",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12425,
+    "title": "Missing Shipment",
+    "status": "Pending",
+    "createdDate": "2024-09-05T07:52:01",
+    "closedDate": "2024-09-28T04:44:22",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12426,
+    "title": "Product Recall",
+    "status": "Active",
+    "createdDate": "2024-08-12T15:42:04",
+    "closedDate": "2024-09-17T17:29:13",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12427,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-09-28T23:10:49",
+    "closedDate": "2024-10-03T05:28:15",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12428,
+    "title": "Late Delivery",
+    "status": "Resolved",
+    "createdDate": "2024-08-26T03:34:50",
+    "closedDate": "2024-08-15T02:28:20",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12429,
+    "title": "Late Delivery",
+    "status": "Resolved",
+    "createdDate": "2024-09-01T08:10:18",
+    "closedDate": "2024-08-14T02:18:52",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12430,
+    "title": "Damaged Goods",
+    "status": "Resolved",
+    "createdDate": "2024-08-04T09:02:16",
+    "closedDate": "2024-08-23T02:35:59",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12431,
+    "title": "Delayed Payment",
+    "status": "Resolved",
+    "createdDate": "2024-08-19T02:46:25",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12432,
+    "title": "Late Delivery",
+    "status": "Resolved",
+    "createdDate": "2024-08-18T04:31:15",
+    "closedDate": "2024-09-21T12:19:29",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12433,
+    "title": "Late Delivery",
+    "status": "Active",
+    "createdDate": "2024-08-09T03:05:25",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12434,
+    "title": "Missing Shipment",
+    "status": "Resolved",
+    "createdDate": "2024-09-04T07:51:49",
+    "closedDate": "2024-08-07T10:36:00",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12435,
+    "title": "Missing Shipment",
+    "status": "Pending",
+    "createdDate": "2024-10-01T11:41:46",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12436,
+    "title": "Damaged Goods",
+    "status": "Active",
+    "createdDate": "2024-10-04T07:21:41",
+    "closedDate": "2024-08-17T16:48:36",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12437,
+    "title": "Late Delivery",
+    "status": "Pending",
+    "createdDate": "2024-08-04T09:28:21",
+    "closedDate": "2024-08-04T20:59:54",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12438,
+    "title": "Missing Shipment",
+    "status": "Active",
+    "createdDate": "2024-08-19T02:44:36",
+    "closedDate": "2024-09-25T03:46:28",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12439,
+    "title": "Delayed Payment",
+    "status": "Resolved",
+    "createdDate": "2024-08-10T10:44:17",
+    "closedDate": "2024-08-29T10:27:23",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12440,
+    "title": "Delayed Payment",
+    "status": "Resolved",
+    "createdDate": "2024-08-08T10:58:53",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12441,
+    "title": "Delayed Payment",
+    "status": "Pending",
+    "createdDate": "2024-08-30T07:36:52",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 3,
+      "name": "Supplier C",
+      "number": "LL-107",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12442,
+    "title": "Late Delivery",
+    "status": "Pending",
+    "createdDate": "2024-09-27T04:17:55",
+    "closedDate": "2024-09-19T02:50:04",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "White",
+      "email": "emilywhite@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 1,
+      "name": "Supplier A",
+      "number": "LL-105",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12443,
+    "title": "Missing Shipment",
+    "status": "Resolved",
+    "createdDate": "2024-09-18T11:19:02",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Update"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Update"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 2,
+      "name": "Supplier B",
+      "number": "LL-106",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12444,
+    "title": "Delayed Payment",
+    "status": "Active",
+    "createdDate": "2024-09-19T16:48:18",
+    "closedDate": null,
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Correction"
+      },
+      {
+        "id": 5,
+        "comment": "Detail comment 5 related to the issue.",
+        "type": "Correction"
+      }
+    ],
+    "assignedAgent": {
+      "id": 3,
+      "firstName": "Chris",
+      "lastName": "Johnson",
+      "email": "chrisjohnson@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 4,
+      "name": "Supplier D",
+      "number": "LL-108",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  },
+  {
+    "id": 12445,
+    "title": "Damaged Goods",
+    "status": "Pending",
+    "createdDate": "2024-08-30T13:11:36",
+    "closedDate": "2024-09-15T17:08:54",
+    "details": [
+      {
+        "id": 1,
+        "comment": "Detail comment 1 related to the issue.",
+        "type": "Note"
+      },
+      {
+        "id": 2,
+        "comment": "Detail comment 2 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 3,
+        "comment": "Detail comment 3 related to the issue.",
+        "type": "Deviation"
+      },
+      {
+        "id": 4,
+        "comment": "Detail comment 4 related to the issue.",
+        "type": "Note"
+      }
+    ],
+    "assignedAgent": {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "janesmith@ll.com",
+      "profilePictureUrl": "https://placehold.co/64x64/png"
+    },
+    "supplier": {
+      "id": 5,
+      "name": "Supplier E",
+      "number": "LL-109",
+      "logoUrl": "https://placehold.co/128x64"
+    }
+  }
+]

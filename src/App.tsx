@@ -1,30 +1,32 @@
+import style from './App.module.css';
+import { Card } from './ui/Card';
+import data from '../public/data/data.json';
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [issues] = useState(data);
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <div className={style.app}>
+      <Card>Hello test</Card>
+      <Card>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            {issues.map((item) => {
+              return (
+                <tr>
+                  <td>{item.title}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </Card>
+    </div>
   );
 }
 
