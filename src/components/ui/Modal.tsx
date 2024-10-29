@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom';
 import style from './Modal.module.css';
 import { useScrollLock } from 'usehooks-ts';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { X } from 'react-feather';
 
 const ModalBody = ({
@@ -13,11 +13,27 @@ const ModalBody = ({
   showModal: boolean;
   onClose: () => void;
 }) => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    setActive(showModal);
+  }, [showModal]);
+
+  const handleClose = () => {
+    setActive(false);
+    // wait for css animations to finish before unmounting
+    setTimeout(() => {
+      onClose();
+    }, 500);
+  };
+
   return (
-    <div className={`${style.modal} ${showModal ? style.active : ''}`}>
-      <div className={style.overlay}> </div>
+    <div className={`${style.modal} ${active ? style.active : ''}`}>
+      <div className={style.overlay} onClick={handleClose}>
+        {' '}
+      </div>
       <div className={style['modal-body']}>
-        <button className={style['modal-close']} onClick={onClose}>
+        <button className={style['modal-close']} onClick={handleClose}>
           <X />
         </button>
         {children}
