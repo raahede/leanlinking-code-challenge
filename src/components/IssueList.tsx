@@ -4,6 +4,7 @@ import style from './IssueList.module.css';
 import { Check, Pause, Play } from 'react-feather';
 import { formatResolutionTime } from '../hooks/useIssues';
 import { Modal } from './ui/Modal';
+import { IssueDetails } from './IssueDetails';
 
 const StatusIcon = ({ status }: { status: TIssueStatus }) => {
   switch (status) {
@@ -89,7 +90,7 @@ export const IssueList = ({
   return (
     <>
       <Modal showModal={showModal} onClose={handleModalClose}>
-        {selectedIssue && <div>{selectedIssue.title}</div>}
+        {selectedIssue && <IssueDetails issue={selectedIssue} />}
       </Modal>
       <table className={style['issue-list']}>
         <thead>

@@ -2,6 +2,7 @@ import { createPortal } from 'react-dom';
 import style from './Modal.module.css';
 import { useScrollLock } from 'usehooks-ts';
 import { useEffect } from 'react';
+import { X } from 'react-feather';
 
 const ModalBody = ({
   children,
@@ -16,7 +17,9 @@ const ModalBody = ({
     <div className={`${style.modal} ${showModal ? style.active : ''}`}>
       <div className={style.overlay}> </div>
       <div className={style['modal-body']}>
-        <button onClick={onClose}>Close</button>
+        <button className={style['modal-close']} onClick={onClose}>
+          <X />
+        </button>
         {children}
       </div>
     </div>
