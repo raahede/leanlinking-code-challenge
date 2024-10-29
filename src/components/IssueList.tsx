@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { TIssueListItemParsed, TIssueStatus } from '../types';
 import style from './IssueList.module.css';
 import { Check, Pause, Play } from 'react-feather';
+import { formatResolutionTime } from '../hooks/useIssues';
 
 const StatusIcon = ({ status }: { status: TIssueStatus }) => {
   switch (status) {
@@ -35,14 +36,7 @@ const IssueListItem = memo(function Post({
     // Calculate the difference in milliseconds
     const diff = Math.abs(issue.closedDate - issue.createdDate);
 
-    // Calculate days, hours, minutes
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-    if (days === 0 && hours === 0) return `${minutes} minutes`;
-    if (days === 0) return `${hours} hours`;
-    return `${days} days`;
+    return formatResolutionTime(diff);
   };
 
   return (

@@ -1,0 +1,15 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text {
+  font-size: 3rem;
+  margin: 0;
+}
