@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { TIssueList, TIssueListItemParsed } from '../types';
 
 const parseData = (data: TIssueList): TIssueListItemParsed[] => {
@@ -53,12 +53,12 @@ export const useIssues = (data: TIssueList) => {
     return setIssues((prevItems) => prevItems.map((item) => (item.id === id ? { ...item, ...params } : item)));
   };
 
-  const setIssueResolved = (id: number) => {
+  const setIssueResolved = useCallback((id: number) => {
     updateIssue(id, {
       status: 'Resolved',
       closedDate: Date.now()
     });
-  };
+  }, []);
 
   return {
     sortedIssues,

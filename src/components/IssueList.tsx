@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import { TIssueListItemParsed, TIssueStatus } from '../types';
 import style from './IssueList.module.css';
 import { Check, Pause, Play } from 'react-feather';
@@ -28,11 +28,11 @@ const StatusIcon = ({ status }: { status: TIssueStatus }) => {
 const IssueListItem = memo(function Post({
   issue,
   resolveIssue,
-  onClick
+  selectIssue
 }: {
   issue: TIssueListItemParsed;
   resolveIssue: (id: number) => void;
-  onClick: () => void;
+  selectIssue: (issue: TIssueListItemParsed) => void;
 }) {
   const getResolutionTime = () => {
     if (!issue.closedDate) return '-';
@@ -44,12 +44,12 @@ const IssueListItem = memo(function Post({
   };
 
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.stopPropagation();
+    e.stopPropagation(); // avoid event to trigger click on parent
     resolveIssue(issue.id);
   };
 
   return (
-    <tr className={style['issue-list-item']} onClick={onClick}>
+    <tr className={style['issue-list-item']} onClick={() => selectIssue(issue)}>
       <td>{issue.id}</td>
       <td>{issue.title}</td>
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
@@ -79,19 +79,19 @@ export const IssueList = ({
 }) => {
   const [selectedIssue, setSelectedIssue] = useState<TIssueListItemParsed | null>(null);
   const [showModal, setShowModal] = useState(false);
+
   const handleModalClose = () => {
     setSelectedIssue(null);
     setShowModal(false);
   };
-  const handleItemSelect = (item: TIssueListItemParsed) => {
+
+  const handleItemSelect = useCallback((item: TIssueListItemParsed) => {
     setSelectedIssue(item);
     setShowModal(true);
-  };
+  }, []);
+
   return (
     <>
-      <Modal showModal={showModal} onClose={handleModalClose}>
-        {selectedIssue && <IssueDetails issue={selectedIssue} />}
-      </Modal>
       <table className={style['issue-list']}>
         <thead>
           <tr>
@@ -107,16 +107,14 @@ export const IssueList = ({
         <tbody>
           {issues.map((item) => {
             return (
-              <IssueListItem
-                key={item.id}
-                issue={item}
-                resolveIssue={resolveIssue}
-                onClick={() => handleItemSelect(item)}
-              />
+              <IssueListItem key={item.id} issue={item} resolveIssue={resolveIssue} selectIssue={handleItemSelect} />
             );
           })}
         </tbody>
       </table>
+      <Modal showModal={showModal} onClose={handleModalClose}>
+        {selectedIssue && <IssueDetails issue={selectedIssue} />}
+      </Modal>
     </>
   );
 };
