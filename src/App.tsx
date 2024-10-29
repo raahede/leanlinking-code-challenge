@@ -27,7 +27,7 @@ export const App = () => {
     <div className={style.app}>
       <Card>Hello test</Card>
       <Card>
-        <button onClick={() => setSort((sort) => (sort = !sort))}>Sort {sort ? 'ascending' : 'descending'}</button>
+        <button onClick={() => setSort((sort) => (sort = !sort))}>Sort {sort ? 'newest' : 'oldest'}</button>
         <IssueList issues={sortedIssues} />
       </Card>
     </div>
