@@ -1,8 +1,9 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import { TIssueListItemParsed, TIssueStatus } from '../types';
 import style from './IssueList.module.css';
 import { Check, Pause, Play } from 'react-feather';
 import { formatResolutionTime } from '../hooks/useIssues';
+import { Modal } from './ui/Modal';
 
 const StatusIcon = ({ status }: { status: TIssueStatus }) => {
   switch (status) {
@@ -25,10 +26,12 @@ const StatusIcon = ({ status }: { status: TIssueStatus }) => {
 // Memoize component to avoid rerender when sorting list
 const IssueListItem = memo(function Post({
   issue,
-  resolveIssue
+  resolveIssue,
+  onClick
 }: {
   issue: TIssueListItemParsed;
   resolveIssue: (id: number) => void;
+  onClick: () => void;
 }) {
   const getResolutionTime = () => {
     if (!issue.closedDate) return '-';
@@ -39,15 +42,20 @@ const IssueListItem = memo(function Post({
     return formatResolutionTime(diff);
   };
 
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.stopPropagation();
+    resolveIssue(issue.id);
+  };
+
   return (
-    <tr>
+    <tr className={style['issue-list-item']} onClick={onClick}>
       <td>{issue.id}</td>
       <td>{issue.title}</td>
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
       <td>
         <StatusIcon status={issue.status} />
         {issue.status !== 'Resolved' && (
-          <button className={style['action-button']} onClick={() => resolveIssue(issue.id)}>
+          <button className={style['action-button']} onClick={handleButtonClick}>
             resolve
           </button>
         )}
@@ -68,24 +76,46 @@ export const IssueList = ({
   issues: TIssueListItemParsed[];
   resolveIssue: (id: number) => void;
 }) => {
+  const [selectedIssue, setSelectedIssue] = useState<TIssueListItemParsed | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const handleModalClose = () => {
+    setSelectedIssue(null);
+    setShowModal(false);
+  };
+  const handleItemSelect = (item: TIssueListItemParsed) => {
+    setSelectedIssue(item);
+    setShowModal(true);
+  };
   return (
-    <table className={style['issue-list']}>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Agent</th>
-          <th>Status</th>
-          <th>Supplier</th>
-          <th>Created</th>
-          <th>Resolution time</th>
-        </tr>
-      </thead>
-      <tbody>
-        {issues.map((item) => {
-          return <IssueListItem key={item.id} issue={item} resolveIssue={resolveIssue} />;
-        })}
-      </tbody>
-    </table>
+    <>
+      <Modal showModal={showModal} onClose={handleModalClose}>
+        {selectedIssue && <div>{selectedIssue.title}</div>}
+      </Modal>
+      <table className={style['issue-list']}>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Agent</th>
+            <th>Status</th>
+            <th>Supplier</th>
+            <th>Created</th>
+            <th>Resolution time</th>
+          </tr>
+        </thead>
+        <tbody>
+          {issues.map((item) => {
+            return (
+              <IssueListItem
+                key={item.id}
+                issue={item}
+                resolveIssue={resolveIssue}
+                onClick={() => handleItemSelect(item)}
+              />
+            );
+          })}
+        </tbody>
+      </table>
+    </>
   );
 };
