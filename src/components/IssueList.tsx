@@ -52,7 +52,11 @@ const IssueListItem = memo(function Post({
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
       <td>
         <StatusIcon status={issue.status} />
-        {issue.status !== 'Resolved' && <button onClick={() => resolveIssue(issue.id)}>resolve</button>}
+        {issue.status !== 'Resolved' && (
+          <button className={style['action-button']} onClick={() => resolveIssue(issue.id)}>
+            resolve
+          </button>
+        )}
       </td>
       <td title={issue.supplier.name}>
         <img width="44" src={issue.supplier.logoUrl} alt={issue.supplier.name} />
