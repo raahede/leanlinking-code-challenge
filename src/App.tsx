@@ -6,7 +6,7 @@ import { ArrowDown, ArrowUp } from 'react-feather';
 import { useIssues } from './hooks/useIssues';
 
 export const App = () => {
-  const { sort, setSort, sortedIssues } = useIssues(data);
+  const { sort, setSort, sortedIssues, setIssueResolved } = useIssues(data);
 
   return (
     <div className={style.app}>
@@ -15,7 +15,7 @@ export const App = () => {
         <button onClick={() => setSort((sort) => (sort = !sort))}>
           {sort ? <ArrowDown size={14} /> : <ArrowUp size={14} />} Sort {sort ? 'newest' : 'oldest'}
         </button>
-        <IssueList issues={sortedIssues} />
+        <IssueList issues={sortedIssues} resolveIssue={setIssueResolved} />
       </Card>
     </div>
   );

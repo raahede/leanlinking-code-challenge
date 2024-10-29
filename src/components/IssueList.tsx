@@ -22,7 +22,13 @@ const StatusIcon = ({ status }: { status: TIssueStatus }) => {
 };
 
 // Memoize component to avoid rerender when sorting list
-const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParsed }) {
+const IssueListItem = memo(function Post({
+  issue,
+  resolveIssue
+}: {
+  issue: TIssueListItemParsed;
+  resolveIssue: (id: number) => void;
+}) {
   const getResolutionTime = () => {
     if (!issue.closedDate) return '-';
 
@@ -46,6 +52,7 @@ const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParse
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
       <td>
         <StatusIcon status={issue.status} />
+        {issue.status !== 'Resolved' && <button onClick={() => resolveIssue(issue.id)}>resolve</button>}
       </td>
       <td title={issue.supplier.name}>
         <img width="44" src={issue.supplier.logoUrl} alt={issue.supplier.name} />
@@ -56,7 +63,13 @@ const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParse
   );
 });
 
-export const IssueList = ({ issues }: { issues: TIssueListItemParsed[] }) => {
+export const IssueList = ({
+  issues,
+  resolveIssue
+}: {
+  issues: TIssueListItemParsed[];
+  resolveIssue: (id: number) => void;
+}) => {
   return (
     <table className={style['issue-list']}>
       <thead>
@@ -72,7 +85,7 @@ export const IssueList = ({ issues }: { issues: TIssueListItemParsed[] }) => {
       </thead>
       <tbody>
         {issues.map((item) => {
-          return <IssueListItem key={item.id} issue={item} />;
+          return <IssueListItem key={item.id} issue={item} resolveIssue={resolveIssue} />;
         })}
       </tbody>
     </table>
