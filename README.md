@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# LeanLinking coding challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Setup
 
-Currently, two official plugins are available:
+This repo requires [`yarn`](https://classic.yarnpkg.com/lang/en/docs/instal) and `Node` to run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Setup and run in dev mode
+```zsh
+yarn
+yarn dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Requirements 
+- [x] Relevant data is shown to the user.
+- [ ] Issue Trend chart should visualize issue data in a meaningful way.
+- [x] Open, Closed and Average Resolution Time metrics should indicate if trend is going up or down.
+- [x] Issue list should list items with relevant data in columns.
+- [x] It should be possible to close an issue, and the UI should reflect the changes.
+- [x] Clicking on a row in the issue list should open a modal that displays further information on the issue item.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Notes
+* Focus on a modular setup and separation of concern.
+* Focus on best practices and performance.
+* No chart was implemented due to time constrain.
+* Data is imported directly into the app, which is less than ideal. Setting up a simple CRUD API backend would be the next step.
+* Handling the list data could also be refactored into a list provider (global state).
+* Next step for the React app would be to add a router to rendering and data fetching. TanStack router could be used for a client side SPA solution. Next.js could be used for a more powerful solution, but also introduces a more complex setup which might not be needed.
+* Some refactor would be beneficial to clean up `IssueList.tsx`
+* Double checking rendering performance would be good (check that unnecessary rerenders are avoided)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
