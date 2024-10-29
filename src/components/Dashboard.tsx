@@ -1,12 +1,22 @@
-import style from './App.module.css';
-import { Card } from './components/ui/Card';
-import data from './data/data.json';
-import { IssueList } from './components/IssueList';
+import style from './Dashboard.module.css';
+import { Card } from './ui/Card';
+import { IssueList } from './IssueList';
 import { ArrowDown, ArrowUp } from 'react-feather';
-import { useIssues } from './hooks/useIssues';
-import { Stat } from './components/ui/Stat';
+import { parseData, useIssues } from '../hooks/useIssues';
+import { Stat } from './ui/Stat';
+import { dashboardRoute } from '../main';
+import { Outlet } from '@tanstack/react-router';
+import { useStore } from '../store/StoreContext';
+import { useEffect } from 'react';
 
-export const App = () => {
+export const Dashboard = () => {
+  const { dispatch } = useStore();
+  const issuesData = dashboardRoute.useLoaderData();
+
+  useEffect(() => {
+    dispatch({ type: 'UPDATE_ISSUES', payload: parseData(issuesData) });
+  }, [dispatch, issuesData]);
+
   const {
     sort,
     setSort,
@@ -15,10 +25,11 @@ export const App = () => {
     openIssuesCount,
     closedIssues,
     averageResolutionTimeFormatted
-  } = useIssues(data);
+  } = useIssues(issuesData);
 
   return (
-    <div className={style.app}>
+    <div className={style.dashboard}>
+      <Outlet />
       <Card>
         <h2>Stats</h2>
         <div className={style.stats}>

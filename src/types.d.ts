@@ -1,4 +1,4 @@
-import data from './data/data.json';
+import data from '../public/data/data.json';
 
 export type TIssueList = typeof data;
 export type TIssueListItem = (typeof data)[0];

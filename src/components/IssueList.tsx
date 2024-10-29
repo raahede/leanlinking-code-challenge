@@ -5,6 +5,7 @@ import { Check, Pause, Play } from 'react-feather';
 import { formatResolutionTime } from '../hooks/useIssues';
 import { Modal } from './ui/Modal';
 import { IssueDetails } from './IssueDetails';
+import { Link } from '@tanstack/react-router';
 
 const StatusIcon = ({ status }: { status: TIssueStatus }) => {
   switch (status) {
@@ -50,7 +51,11 @@ const IssueListItem = memo(function Post({
 
   return (
     <tr className={style['issue-list-item']} onClick={() => selectIssue(issue)}>
-      <td>{issue.id}</td>
+      <td>
+        <Link onClick={(e) => e.stopPropagation()} to={`/${issue.id.toString()}`}>
+          {issue.id}
+        </Link>
+      </td>
       <td>{issue.title}</td>
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
       <td>

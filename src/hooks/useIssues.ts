@@ -1,7 +1,8 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { TIssueList, TIssueListItemParsed } from '../types';
+import { useStore } from '../store/StoreContext';
 
-const parseData = (data: TIssueList): TIssueListItemParsed[] => {
+export const parseData = (data: TIssueList): TIssueListItemParsed[] => {
   return data.map((issue) => {
     return {
       ...issue,
@@ -23,20 +24,25 @@ export const formatResolutionTime = (diff: number) => {
 };
 
 export const useIssues = (data: TIssueList) => {
+  const { state, dispatch } = useStore();
+
+  useEffect(() => {
+    dispatch({ type: 'UPDATE_ISSUES', payload: parseData(data) });
+  }, [dispatch, data]);
+
   const [sort, setSort] = useState(false);
-  const [issues, setIssues] = useState(parseData(data));
 
   const sortedIssues = sort
-    ? issues.sort((a, b) => b.createdDate - a.createdDate)
-    : issues.sort((a, b) => a.createdDate - b.createdDate);
+    ? state.issues.sort((a, b) => b.createdDate - a.createdDate)
+    : state.issues.sort((a, b) => a.createdDate - b.createdDate);
 
   const closedIssues = useMemo(() => {
-    return issues.filter((item) => item.status === 'Resolved');
-  }, [issues]);
+    return state.issues.filter((item) => item.status === 'Resolved');
+  }, [state.issues]);
 
   const openIssuesCount = useMemo(() => {
-    return issues.length - closedIssues.length;
-  }, [issues, closedIssues]);
+    return state.issues.length - closedIssues.length;
+  }, [state.issues, closedIssues]);
 
   const averageResolutionTimeFormatted = useMemo(() => {
     // Calculate the difference in milliseconds
@@ -49,16 +55,19 @@ export const useIssues = (data: TIssueList) => {
     return formatResolutionTime(diff);
   }, [closedIssues]);
 
-  const updateIssue = (id: TIssueListItemParsed['id'], params: Partial<TIssueListItemParsed>) => {
-    return setIssues((prevItems) => prevItems.map((item) => (item.id === id ? { ...item, ...params } : item)));
-  };
-
-  const setIssueResolved = useCallback((id: number) => {
-    updateIssue(id, {
-      status: 'Resolved',
-      closedDate: Date.now()
-    });
-  }, []);
+  const setIssueResolved = useCallback(
+    (id: number) => {
+      dispatch({
+        type: 'UPDATE_ISSUE',
+        payload: {
+          id,
+          status: 'Resolved',
+          closedDate: Date.now()
+        }
+      });
+    },
+    [dispatch]
+  );
 
   return {
     sortedIssues,
