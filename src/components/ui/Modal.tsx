@@ -24,7 +24,7 @@ const ModalBody = ({
     // wait for css animations to finish before unmounting
     setTimeout(() => {
       onClose();
-    }, 500);
+    }, 250);
   };
 
   return (
