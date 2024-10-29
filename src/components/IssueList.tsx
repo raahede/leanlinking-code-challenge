@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { TIssueListItemParsed, TIssueStatus } from './types';
+import { TIssueListItemParsed, TIssueStatus } from '../types';
 import style from './IssueList.module.css';
 import { Check, Pause, Play } from 'react-feather';
 

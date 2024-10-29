@@ -1,28 +1,12 @@
 import style from './App.module.css';
-import { Card } from './ui/Card';
+import { Card } from './components/ui/Card';
 import data from '../public/data/data.json';
-import { useState } from 'react';
-import { IssueList } from './IssueList';
-import { TIssueList, TIssueListItemParsed } from './types';
+import { IssueList } from './components/IssueList';
 import { ArrowDown, ArrowUp } from 'react-feather';
-
-const parseData = (data: TIssueList): TIssueListItemParsed[] => {
-  return data.map((issue) => {
-    return {
-      ...issue,
-      createdDate: Date.parse(issue.createdDate),
-      closedDate: issue.closedDate ? Date.parse(issue.closedDate) : null
-    } as TIssueListItemParsed;
-  });
-};
+import { useIssues } from './hooks/useIssues';
 
 export const App = () => {
-  const [sort, setSort] = useState(false);
-  const [issues] = useState(parseData(data));
-
-  const sortedIssues = sort
-    ? issues.sort((a, b) => b.createdDate - a.createdDate)
-    : issues.sort((a, b) => a.createdDate - b.createdDate);
+  const { sort, setSort, sortedIssues } = useIssues(data);
 
   return (
     <div className={style.app}>
