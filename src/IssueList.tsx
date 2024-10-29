@@ -1,6 +1,25 @@
 import { memo } from 'react';
-import { TIssueListItemParsed } from './types';
+import { TIssueListItemParsed, TIssueStatus } from './types';
 import style from './IssueList.module.css';
+import { Check, Pause, Play } from 'react-feather';
+
+const StatusIcon = ({ status }: { status: TIssueStatus }) => {
+  switch (status) {
+    case 'Active':
+      return <Play size={14} />;
+
+    case 'Pending':
+      return <Pause size={14} />;
+
+    case 'Resolved':
+      return <Check size={14} />;
+
+    default:
+      // Don't break the app
+      console.warn(`Unknown issue status "${status}"`);
+      return '';
+  }
+};
 
 // Memoize component to avoid rerender when sorting list
 const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParsed }) {
@@ -25,7 +44,9 @@ const IssueListItem = memo(function Post({ issue }: { issue: TIssueListItemParse
       <td>{issue.title}</td>
       <td>{issue.closedDate ? 'Closed' : 'Open'}</td>
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
-      <td>{issue.status}</td>
+      <td>
+        <StatusIcon status={issue.status} />
+      </td>
       <td title={issue.supplier.name}>
         <img width="44" src={issue.supplier.logoUrl} alt={issue.supplier.name} />
       </td>
