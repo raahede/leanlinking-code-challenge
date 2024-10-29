@@ -41,8 +41,8 @@ const IssueListItem = memo(function Post({
 
   return (
     <tr>
+      <td>{issue.id}</td>
       <td>{issue.title}</td>
-      <td>{issue.closedDate ? 'Closed' : 'Open'}</td>
       <td>{`${issue.assignedAgent.firstName} ${issue.assignedAgent.lastName}`}</td>
       <td>
         <StatusIcon status={issue.status} />
@@ -72,8 +72,8 @@ export const IssueList = ({
     <table className={style['issue-list']}>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Title</th>
-          <th>State</th>
           <th>Agent</th>
           <th>Status</th>
           <th>Supplier</th>
