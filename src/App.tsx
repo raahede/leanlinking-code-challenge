@@ -1,6 +1,6 @@
 import style from './App.module.css';
 import { Card } from './components/ui/Card';
-import data from '../public/data/data.json';
+import data from './data/data.json';
 import { IssueList } from './components/IssueList';
 import { ArrowDown, ArrowUp } from 'react-feather';
 import { useIssues } from './hooks/useIssues';
