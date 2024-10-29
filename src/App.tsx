@@ -4,6 +4,7 @@ import data from '../public/data/data.json';
 import { useState } from 'react';
 import { IssueList } from './IssueList';
 import { TIssueList, TIssueListItemParsed } from './types';
+import { ArrowDown, ArrowUp } from 'react-feather';
 
 const parseData = (data: TIssueList): TIssueListItemParsed[] => {
   return data.map((issue) => {
@@ -27,7 +28,9 @@ export const App = () => {
     <div className={style.app}>
       <Card>Hello test</Card>
       <Card>
-        <button onClick={() => setSort((sort) => (sort = !sort))}>Sort {sort ? 'newest' : 'oldest'}</button>
+        <button onClick={() => setSort((sort) => (sort = !sort))}>
+          {sort ? <ArrowDown size={14} /> : <ArrowUp size={14} />} Sort {sort ? 'newest' : 'oldest'}
+        </button>
         <IssueList issues={sortedIssues} />
       </Card>
     </div>
